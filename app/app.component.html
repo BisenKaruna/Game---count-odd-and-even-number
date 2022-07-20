@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+  <div class="col-sm-6">
+    <app-game-control (increamentOnEachInterval)= "OnincreamentOnEachInterval($event)"></app-game-control>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <app-odd *ngFor= "let oddNumber of oddNums" [oddNum]="oddNumber"></app-odd>
+    <app-even *ngFor= "let evenNumber of evenNums" [evenNum]="evenNumber"></app-even>
+    </div>
+    </div>
+</div>
